@@ -139,9 +139,9 @@ if args.model_type=='coarse':
                    gt_pl:gt,gt_fine_pl:gt_fine}
         
         cout,closs,closs_r = sess.run([pc_coarse,loss_coarse,loss_reg_coarse],feed_dict=feed_dict)
-		pcd_name = cloud_list[0]
-		pcd_name = pcd_name.split('/')
-		pcd_name = pcd_name[-1]
+	pcd_name = cloud_list[0]
+	pcd_name = pcd_name.split('/')
+	pcd_name = pcd_name[-1]
 
         if args.print_list==True:
             print "Test for: " + pcd_name
@@ -190,9 +190,9 @@ if args.model_type=='fine':
         
         fout,floss,floss_r = sess.run([pc_fine,loss_fine,loss_reg_fine],feed_dict=feed_dict)
 		
-		pcd_name = cloud_list[0]
-		pcd_name = pcd_name.split('/')
-		pcd_name = pcd_name[-1]
+	pcd_name = cloud_list[0]
+	pcd_name = pcd_name.split('/')
+	pcd_name = pcd_name[-1]
 
         if args.print_list==True:
             print "Test for: " + pcd_name
